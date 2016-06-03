@@ -263,9 +263,9 @@ class AutoComplete extends Component {
     this.props.onNewRequest(chosenRequest, index);
 
     this.timerTouchTapCloseId = setTimeout(() => {
-      this.setState({
-        searchText: searchText,
-      });
+      //this.setState({
+      //  searchText: searchText,
+      //});
       this.close();
       this.timerTouchTapCloseId = null;
     }, this.props.menuCloseDelay);
